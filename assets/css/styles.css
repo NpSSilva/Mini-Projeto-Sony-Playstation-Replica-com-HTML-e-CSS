@@ -1,0 +1,409 @@
+
+@font-face {
+    font-family: 'SST Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Roman'), url('../font/SST/SSTRg.woff') format('woff');
+}
+@font-face {
+    font-family: 'SST Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Medium'), url('../font/SST/SSTMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'SST Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SST Light'), url('../font/SST/SSTLight.woff') format('woff');
+}
+
+:root{
+    --corAzul: #0070D1;
+}
+
+/* RESETS */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'SST Roman';
+        background-color: #0070D1;
+    }
+/* RESETS */
+
+
+
+
+
+
+
+
+/* HEADER */
+    header {
+        width: 100%;
+    }
+    .bar-header{
+        width: 100%;
+        height: 36px;
+        background: black;
+    }
+    .bar-header img{
+        float: right;
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+/* HEADER */
+
+
+
+
+
+
+
+
+
+/* NAVEGAÇÃO */
+
+    /* NAV HEADER*/
+    nav{
+        position: relative;
+        width: 100%;
+        height: 64px;
+        background-color: white;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.787);
+    }
+    nav img{
+        float: left;
+        padding-top: 17px;
+        margin-left: 24px
+    }
+
+    /* NAV-LIST */
+    .nav-list ul{
+        float: left;
+        list-style: none;
+        margin-left: 30px;
+    }
+     .nav-list ul li{
+        float: left;
+        text-align: center;
+    }
+      .nav-list ul li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-family: 'SST Medium';
+        font-size: 0.8em;
+
+        padding-top: 22px ;
+        margin-left: 10px;
+        width: 100px;
+        height: 64px;
+        transform: skew(5);
+
+      }
+        .nav-list ul li a:hover{
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.055);
+            color: var(--corAzul);
+            font-size: 13.3px;
+            width: 100.3px;
+            transform: skew(10px);
+            transition: all 0.4s;
+        }
+
+
+
+
+    /* INICIAR SEASON */
+    .nav-season{
+        position: relative;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        float: right;
+
+        width: 150px;
+        height: 24px;
+        margin-top: 18px;
+        margin-right: -12px;
+
+        border-radius: 5cm;
+
+        text-align: center;
+        font-family: 'SST Medium';
+        font-size: 16px;
+    }
+    .nav-season a{
+        text-decoration: none;
+        text-align: center;
+    }
+        .nav-season:hover{
+            background-color: rgb(58, 58, 58);
+        }
+
+    /* LUPA SEARCH*/
+    .nav-search{
+        float: right;
+        margin-right: 18px;
+
+    }
+
+/* NAV */
+
+
+
+
+
+
+/* SECTION */
+
+    .sec-container{
+        width: 100%;
+        position: relative;
+        height: 640px;
+
+        box-shadow: 0px 0px 3px black;
+        overflow: hidden;
+
+        margin-top: 5px;
+    }
+
+    /* BACKGROUND */
+    .sec-container img{
+        position: absolute;
+        margin: auto;
+        min-width: 100%;
+        left: -60px;
+        top: -40px;
+        transform: scale(100%);
+        opacity: 100%;
+
+
+        transition-property: transform opacity;
+        transition-delay: 0.10s;
+        transition-duration: 3s;
+
+    }
+    .sec-container img:hover{
+        transform: scale(103%);
+        opacity: 60%;
+
+    }
+
+    /* PLAY NO LIMIT */
+    .sec-tittle{
+        position: absolute;
+        width: 260px;
+
+        top: 70px;
+        left: 140px;
+
+        background-color: rgba(126, 126, 126, 0.061);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.209);
+        padding: 20px;
+        border-radius: 4px;
+
+        transition: all 0.10s;
+    }
+        .sec-tittle:hover{
+           top: 30px;
+           width: 300px;
+           font-size: 19px;
+           background-color: #0070d100;
+        }
+    .sec-tittle .sec-hover{
+        color: var(--corAzul);
+        font-size: 3em;
+        text-align: left;
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.383);
+
+        transition: text-shadow 0.5s;
+    }
+        .sec-tittle:hover .sec-hover{
+            text-shadow: 30px 0px 0px rgba(255, 255, 255, 0);
+        }
+
+    /* TEXTO */
+    .sec-tittle p{
+        font-size: 1.8em;
+        color: white;
+        text-shadow: 0px 2px 0px rgba(255, 255, 255, 0);
+
+        transition: text-shadow 0.5s;
+
+    }
+        .sec-tittle p:hover{
+            text-shadow: 2px 2px 0px #a7a7a767;
+        }
+    .sec-tittle b{
+        color:black;
+        font-size: 1.2em;
+    }
+    .sec-tittle i{
+        color:black;
+        font-size: 0.5em;
+    }
+
+    /* BUTTON SITE OFICIAL */
+
+    .sec-button-container{
+        position: absolute;
+        width: 23%;
+        right: 70px;
+        top: 180px;
+    }
+
+    .sec-button-inside{
+        padding:30px
+    }
+
+    .sec-button-text{
+
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 16px;
+        text-shadow: 0px 0px 3px black;
+
+        color: white;
+    }
+
+    .sec-button-click{
+        position: absolute;
+        margin-top: 20px;
+
+        transform: translateX(12%);
+
+        width: 200px;
+        height: 36px;
+
+        background-color: rgba(255, 255, 255, 0.823);
+        outline: 1px solid rgba(0, 0, 0, 0.509);
+        border: 3px solid rgba(0, 0, 0, 0.109);
+        border-radius: 32px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.575);
+
+        color: white;
+        font-family: 'SST Medium';
+        font-size: 10px;
+        text-transform: uppercase;
+        padding-bottom: 3px;
+        text-shadow: 0px 0px 0px #0000004d;
+        opacity: 0%;
+        cursor: pointer;
+
+        transition-property: color font-size opacity;
+        transition-duration: 0.75s
+    }
+    .sec-button-text b{
+        color: var(--corAzul);
+    }
+    .sec-button-container .sec-button-click:hover{
+            color: #0070D1;
+            font-size: 13px;
+            opacity: 100%;
+        }
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    margin-top: 5px;
+    width: 100%;
+    height: 42px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+}
+.div-footer{
+    padding-bottom: relative;
+
+
+    margin: auto;
+}
+.creator{
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+    opacity: 0%;
+
+    transition-property: font-size color opacity;
+    transition-duration:  200ms;
+    transition-timing-function: ease-in-out;
+}
+    footer:hover .creator{
+        font-size: 1.175em;
+        color: black;
+        opacity: 100%;
+    }
+.creator b{
+    color: var(--corAzul);
+}
+
+
+    @media screen and (max-width: 976px) {
+        header{
+            display: none;
+        }
+        /* Navegação */
+        nav{
+            width: 100%;
+            height: 110px;
+        }
+        nav .nav-logo{
+            width: 0%;
+            float: none;
+            margin: 0 auto;
+        }
+
+
+        /* Playstation logo */
+        nav .nav-logo img{
+            float: none;
+            margin: 0 auto;
+        }
+
+
+        /* Iniciar Sessão */
+        .nav-season{
+            float: right;
+            margin-right: 20px;
+            margin-top:-92px;
+        }
+        .nav-search{
+            float: left;
+            margin-left: 20px;
+            margin-top:-106px;
+        }
+
+
+        /* Menu */
+        .nav-list{
+            float: none;
+            width: 100%;
+            display: absolute;
+            margin: 0 auto;           
+        }
+        .nav-list ul{
+        
+        }
+        .nav-list ul li{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+    /* IMAGEM */
+        section .sec-container img{
+            left:-280px;
+        }
+
+/* NAV */
+    }
